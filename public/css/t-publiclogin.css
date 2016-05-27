@@ -1,0 +1,70 @@
+.top .top-inner .right img{
+	float: left;
+	margin-right: 6px;
+}
+.top .top-inner .right .info{
+	position: relative;
+	float: left;
+	margin-right: 28px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.top .top-inner .right .perinfo span{
+	display: block;
+	float: left;
+	font-size: 12px;
+	color: #c5d0d4;
+	margin-top: 4px;
+}
+.top .top-inner .right .perinfo img{
+	display: block;
+	float: left;
+	margin-top: 11px;
+	margin-left: 6px;
+}
+ .top .top-inner .right #top-btn{
+ 	display: block;
+ 	float: left;
+ 	font-size: 14px;
+ 	background-color: #e1900e;
+ 	border-radius: 2px;
+ 	border: solid 2px #ffac30;
+ 	padding: 2px 10px;
+ }
+ .top .top-inner .right #top-btn:hover{
+	background-color: #50bbdb;
+	border: solid 2px #50dddd;
+	color: #fff;
+ }
+ .top .top-inner .info .list{
+ 	position: absolute;
+ 	right: 0;
+ 	top: 0;
+ }
+.top .top-inner .info .mune{
+ 	list-style: none;
+ 	width: 102px;
+ 	height: 90px;	
+	box-shadow:0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+	display: none;
+	background-color: #fff;
+ }
+.top .top-inner .info  .null{
+	width: 102px;
+	height: 30px;
+	background:none;
+}
+.top .top-inner .info .mune li a{
+ 	display: block;
+ 	width: 102px;
+ 	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	font-size: 12px;
+ }
+.top .top-inner .mune li a:hover{
+ 	background:#50bbdb ;
+ 	color:#fff;
+ }

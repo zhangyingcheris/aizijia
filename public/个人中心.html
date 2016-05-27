@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/h-gerenzhongxin.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/login-up-modal.css">
+	<script src="css/bootstrap.css"></script>
+	<link rel="shortcut icon" href="images/favicon.ico" />
+
+</head>
+<body>
+
+	<div class="login-cover"></div>  <!-- 弹出来的黑色背景 -->
+		<!-- <button id="login-model">登录</button> -->
+		<div class="login-content clearfix" id="login">
+			<div class="login-close"><img src="images/modal-close.png" alt="close" id="login-close"></div>
+			<div class="login-logo"><img src="images/modal-logo.png" alt="logo"></div>
+			<input type="text" placeholder="邮箱/手机/用户名">
+			<input type="text" placeholder="密码">
+			<button class="login-btn">登录</button>
+			<div class="login-text clearfix">
+				<p class="login-forget-left"><a href="#">忘记密码</a></p>
+				<p class="login-forget-right"><span>还没有账号？</span><a href="#" id="login-to-logup">免费注册</a></p>
+			</div>
+			<div class="login-other">
+				<div class="login-xian"></div>
+				<p>其他报名方式</p>
+				<div class="login-xian"></div>
+			</div>
+			<button class="login-enroll">不登录，直接报名></button>
+		</div>
+
+	<!-- <button id="logup-model">注册</button> -->
+		<div class="login-content clearfix" id="logup">
+			<div class="login-close"><img src="images/modal-close.png" alt="close" id="logup-close"></div>
+			<div class="login-logo">
+				<img src="images/modal-logo.png" alt="logo">
+				<p><a href="#">用手机注册</a></p>
+			</div>
+
+			<input type="text" class="email" placeholder="请输入邮箱">
+			<p class="truea">正确</p><p class="falsea">错误</p>
+			<input type="text" class="name"  placeholder="用户名，4-16个字符，字母/中文/数字">
+			<p class="trueb">正确</p><p class="falseb">错误</p>
+			<input type="text" class="set"  placeholder="设置密码">
+			<p class="truec">正确</p><p class="falsec">错误</p>
+			<input type="text" class="password"  placeholder="输入密码">
+			<p class="trued">正确</p><p class="falsed">错误</p>
+			<input type="text" class="invitation"  placeholder="输入邀请码，可不填">
+			<p class="truee">正确</p><p class="falsee">错误</p>
+
+			<div class="login-logup">
+				<p>注册视为同意<span>《爱自驾用户使用协议》</span></p>
+				<button class="login-btnup">注册</button>
+			</div>
+			<div class="login-other">
+				<div class="login-xian"></div>
+				<p>其他报名方式</p>
+				<div class="login-xian"></div>
+			</div>
+
+			<button class="login-fast">快速登录></button>
+			<!-- <div class="login-cover"></div> -->
+		</div>
+	<!-- </div> -->
+
+
+
+
+		<div class="detail-content" id="detail">
+			<div class="detail-title">
+				<p class="detail-title-p">订单详情</p>
+				<div class="detail-close" id="detail-close">
+					<img src="images/detail-close.png" alt="close">
+					<p>关闭</p>
+				</div>
+			</div>
+			<div class="detail-cost">
+				<h3>订单支付总额: <span><small>￥</small><big>5280</big></span></h3>
+			</div>
+
+			<div class="detail-item">
+				<div class="detail-item-title">
+					<h3>线路信息</h3>
+				</div>
+				<div class="detail-item-main">
+					<p>自驾团名称：  云南落地自驾行摄之旅</p>
+					<p>出游日期： &nbsp;&nbsp;&nbsp;2016-01-17</p>
+					<p>成人：&nbsp;1人<span>儿童：&nbsp;0人</span></p>
+					<p>房间：&nbsp;两人间，愿意拼房</p>
+				</div>
+			</div>
+
+			<div class="detail-item">
+				<div class="detail-item-title">
+					<h3>联系人信息</h3>
+				</div>
+				<div class="detail-item-main">
+					<div class="detail-item-list clearfix">
+						<p>姓名：<span>罗小小</span></p>
+						<p>性别：<span>女</span></p>
+						<p>手机号码：<span>18270837899</span></p>
+						<p>邮箱：2698367589@qq.com</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="detail-item dash">
+				<div class="detail-item-title">
+					<h3>游客信息</h3>
+				</div>
+				<div class="detail-item-main">
+					<div class="detail-item-list clearfix">
+						<p style="width: 100%; line-height: 30px;">游客一</p>
+						<p>游客类型：<span>成人</span></p>
+						<p>姓名：<span>罗小小</span></p>
+						<p>性别：<span>女</span></p>
+						<p>手机号码：<span>18270837899</span></p>
+						<p>证件：<span>护照</span></p>
+						<p>452726199102031552</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="detail-item none">
+				<div class="detail-item-main">
+					<div class="detail-item-list clearfix">
+						<p style="width: 100%; line-height: 30px;">游客二</p>
+						<p>游客类型：<span>成人</span></p>
+						<p>姓名：<span>罗笑笑</span></p>
+						<p>性别：<span>女</span></p>
+						<p>手机号码：<span>18270837899</span></p>
+						<p>证件：<span>护照</span></p>
+						<p>452726199102031552</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="detail-item">
+				<div class="detail-item-title">
+					<h3>保险</h3>
+				</div>
+				<div class="detail-item-main">
+					<p>
+						平安爱自驾境外长线保险 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经典型2份
+						<span class="money-right"><span>￥177</span>/份</span>
+					</p>
+					<p>
+						平安爱自驾境外长线保险 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经典型2份
+						<span class="money-right"><span>￥177</span>/份</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="detail-item">
+				<div class="detail-item-title">
+					<h3>预定信息</h3>
+				</div>
+				<div class="detail-item-main">
+					<div class="detail-item-list clearfix">
+						<p class="allrow">发票信息：<span>是否需要发票：是</span></p>
+						<p>发票抬头：<span>无</span></p>
+						<p>发票明细：<span>会议费</span></p>
+						<p class="allrow">配送地址：<span>北京市朝阳区北辰东路八号汇源国际K区</span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="detail-item">
+				<div class="detail-item-title">
+					<h3>更多要求</h3>
+				</div>
+				<div class="detail-item-main">
+					<div class="detail-item-list clearfix">
+						<p class="allrow">温馨的住宿和美味的餐食</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="detail-top">
+				<img src="images/detail-top.png" alt="top" id="jump-to-top">
+			</div>
+		</div>  <!-- content -->
+
+
+
+
+	<div class="top">
+		<div class="top-inner clearfix">
+			<div class="left clearfix">
+				<div class="le-le ">
+					<a class="changecolor changemap" href="#">
+						<img id="map" class="before" src="images/top-map.png" alt="">
+						<img class="after" src="images/top-map-blue.png" alt="">
+						<span class="change">北京</span>
+						<span class="gray">切换</span>
+					</a>
+				</div>
+				<div class="map clearfix dis">
+					<div class="title">
+						<p>全国：</p>
+					</div>
+					<div class="mapbox">
+						<ul class="mapList clearfix">
+							<li><a href="#">北京</a></li>
+							<li><a href="#">天津</a></li>
+							<li><a href="#">河北</a></li>
+							<li><a href="#">山西</a></li>
+							<li><a href="#">内蒙古</a></li>
+							<li><a href="#">辽宁</a></li>
+							<li><a href="#">吉林</a></li>
+							<li><a href="#">黑龙江</a></li>
+							<li><a href="#">上海</a></li>
+						</ul>
+						<ul class="mapList clearfix">
+							<li><a href="#">江苏</a></li>
+							<li><a href="#">浙江</a></li>
+							<li><a href="#">安徽</a></li>
+							<li><a href="#">福建</a></li>
+							<li><a href="#">江西</a></li>
+							<li><a href="#">山东</a></li>
+							<li><a href="#">河南</a></li>
+							<li><a href="#">湖北</a></li>
+							<li><a href="#">湖南</a></li>
+						</ul>
+						<ul class="mapList clearfix">
+							<li><a href="#">广东</a></li>
+							<li><a href="#">广西</a></li>
+							<li><a href="#">海南</a></li>
+							<li><a href="#">重庆</a></li>
+							<li><a href="#">四川</a></li>
+							<li><a href="#">贵州</a></li>
+							<li><a href="#">云南</a></li>
+							<li><a href="#">西藏</a></li>
+							<li><a href="#">陕西</a></li>
+						</ul>
+						<ul class="mapList clearfix">
+							<li><a href="#">甘肃</a></li>
+							<li><a href="#">青海</a></li>
+							<li><a href="#">宁夏</a></li>
+							<li><a href="#">新疆</a></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<div class="le-ri">
+
+					<a class="changecolor" href="#">
+						<img id="phone" class="before" src="images/top-phone.png" alt="">
+						<img class="after" src="images/top-phone-blue.png" alt="">
+						<span>下载手机APP</span>
+					</a>
+				</div>
+			</div>
+			<div class="right clearfix">
+				<img id="personpic" src="images/top-login.png" alt="">
+				<div class="info clearfix">
+					<div class="perinfo">
+						<span class="loginname">浮生若梦_JKAy </span>
+						<img src="images/top-angle.png" alt="">
+					</div>
+					<div class="list">
+						<div class="null"></div>
+						<ul class="mune clearfix">
+							<li><a href="个人中心.html">个人主页</a></li>
+							<li><a href="#">消息中心</a></li>
+							<li><a href="#">注销</a></li>
+						</ul>
+					</div>
+				</div>
+				<a id="top-btn" href="#">路线定制</a>
+			</div>
+		</div>
+	</div>
+	<header>
+		<div class="header-inner clearfix">
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/header-logo.png" alt="">
+				</a>
+			</div>
+			<div class="nav">
+				<ul class="nav-list clearfix">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">目的地</a></li>
+					<li><a href="#">路线</a></li>
+					<li><a href="#">定制</a></li>
+					<li><a href="#">自驾团</a></li>
+					<li><a href="#">摄影</a></li>
+					<li><a href="#">互动</a></li>
+					<li><a href="#">精选</a></li>
+					<li><a href="#">预定</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+
+	<div id="content">
+		<div class="content-inner">
+			<div class="top">
+
+				<div class="JKAy">
+					<img src="images/h-tou.jpg" alt="" class="first">
+					<p>浮生若梦_JKAy</p>
+					<div class="xiugai"><a href="t-r-izijiaOrder.html"><img src="images/h-xiugai.jpg" alt=""></a>
+						<div class="fensi">
+							<div class="left"><p class="shuzi">0</p><br><p class="wenzi">关注</p></div>
+							<div class="right"><p class="shuzi">0</p><br><p class="wenzi">粉丝</p></div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="h-gaigai"></div> -->
+
+
+
+				<div class="erweima">
+					<img src="images/h-erweima.jpg" alt="" >
+					<p>扫一扫，关注我</p>
+				</div>
+				<div class="xiangji">
+					<a href=""><img src="images/h-xiangji.jpg" alt=""></a>
+					<p>发布照片</p>
+				</div>
+				<div class="hudong">
+					<a href=""><img src="images/h-guanli.jpg" alt=""></a>
+					<p>管理互动</p>
+				</div>
+
+			</div>
+
+			<div class="middle">
+				<div class="dingdan">
+					<p>我的订单</p>
+					<ul>
+						<li><a class="quanbudingdan">全部订单</a></li>
+						<li><a class="daichuxing">待出行</a></li>
+						<li><a class="daizhifu">待支付</a></li>
+						<li><a class="daipingjia">待评价</a></li>
+						<li><a class="yiquxiao">已取消</a></li>
+						<li><a class="diangdanxiangqing" id="detail-modal">订单详情</a></li>
+					</ul>
+				</div>
+				<div class="h-zhengti">
+					<div class="h-quanbudingdan">
+						<div class="wenbenkuang">
+							<select name="" id="" class="tiaojian">
+								<option value="">按条件</option>
+								<option value="">订单编号</option>
+								<option value="">订单时间</option>
+								<option value="">订单地点</option>
+							</select>
+
+							<input type="text" class="kong">
+
+							<select name="" id="" class="zhuangtai">
+								<option value="">状态</option>
+								<option value="">编号</option>
+								<option value="">时间</option>
+								<option value="">地点</option>
+							</select>
+							<img src="images/h-rili.jpg" alt="" class="rili1">至
+							<a ><input type="date" class="kong1"></a>
+							<img src="images/h-rili.jpg" alt="" class="rili2">
+							<input type="text" class="danhao" value="单号">
+							<a href=""><img src="images/h-sousuo.jpg" alt="" class="sousuo"></a>
+						</div>
+						<div class="h-xinxi">
+							<ul>
+								<li><a href="#" class="dingxi">订单信息</a></li>
+								<li><a href="#" class="chanpin">产品类型</a></li>
+								<li><a href="#">出游日期</a></li>
+								<li><a href="#" class="dingjin">订单金额</a></li>
+								<li><a href="#">订单状态</a></li>
+								<li><a href="#" class="caozuo">操作</a></li>
+							</ul>
+						</div>
+						<div class="xiangqing">
+							<div class="bianhao">订单编号：7195351 预订时间：2015-12-29 12:04:00</div>
+							<div class="tupian1">
+								<img src="images/h-chunjie.jpg" alt="" class="chunjie">
+								<p class="danian">[春节]<魅力湘西过大年><br>湘西年夜饭，北京直飞</p>
+								<ul class="lista">
+									<li class="firsta">自驾游</li>
+									<li class="seconda">2016-02-07</li>
+									<li class="thirda">￥4580</li>
+									<li class="fortha">待出行</li>
+									<li>
+										<select name="" id="" class="quxiao">
+											<option value="">取消</option>
+											<option value="">编号</option>
+											<option value="">时间</option>
+											<option value="">地点</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="xiangqing">
+							<div class="bianhao">订单编号：7195351 预订时间：2015-12-25 12:04:00</div>
+							<div class="tupian1">
+								<img src="images/h-bingxue.jpg" alt="" class="bingxue">
+								<p class="danian">[5月]<阿尔山童话世界冰<br>雪温泉之旅>北京直飞....</p>
+								<ul class="lista">
+									<li class="firsta">自驾游</li>
+									<li class="seconda">2016-05-07</li>
+									<li class="thirda">￥4580</li>
+									<li class="fortha">待支付</li>
+									<li>
+										<select name="" id="" class="quxiao">
+											<option value="">支付</option>
+											<option value="">编号</option>
+											<option value="">时间</option>
+											<option value="">地点</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="xiangqing">
+							<div class="bianhao">订单编号：7195351 预订时间：2015-12-25 12:04:00</div>
+							<div class="tupian1">
+								<img src="images/h-hainan.jpg" alt="" >
+								<p class="danian">[4月]<海南海岛环驾 8 日<br>自驾之旅>海口直飞....</p>
+								<ul class="lista">
+									<li class="firsta">自驾游</li>
+									<li class="seconda">2016-04-07</li>
+									<li class="thirda">￥4580</li>
+									<li class="fortha">待评价</li>
+									<li>
+										<select name="" id="" class="quxiao">
+											<option value="">评价</option>
+											<option value="">编号</option>
+											<option value="">时间</option>
+											<option value="">地点</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="xiangqing">
+							<div class="bianhao">订单编号：7195351 预订时间：2015-12-25 12:04:00</div>
+							<div class="tupian1">
+								<img src="images/h-guangdong.jpg" alt="" >
+								<p class="danian">[5月]< 食在广东鄂菜美<br>食6日自驾>  北京直飞 .... </p>
+								<ul class="lista">
+									<li class="firsta">自驾游</li>
+									<li class="seconda">2016-04-07</li>
+									<li class="thirda">￥4580</li>
+									<li class="fortha">已取消</li>
+									<li>
+										<input type="button" class="quxiaoa" value="查看">
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="h-zhifu">
+						<div class="content">
+							<div class="h-first">
+								<p>自驾团 > 境内 > 云南落地自驾行摄之旅 > 我要报名 > 在线支付</p>
+								<div class="zhifutiao">
+									<img src="images/h-123.jpg" alt="">
+									<ul>
+										<li class="firstc">选择路线</li>
+										<li class="secondc">填写订单</li>
+										<li class="thirdc">在线支付</li>
+										<li class="forthc">付款成功</li>
+									</ul>
+								</div>
+
+							</div>
+							<div class="h-second">
+								<img src="images/h-duigou.jpg" alt="">
+								<p class="left">提交成功，请您于
+									<span id="hour"></span>时
+									<span id="minute"></span>分
+									<span id="second"></span>秒内</span>
+									<span class="small">（逾期订单将被取消）</span>
+								</p>
+								<p class="right"><span>应付金额：￥ 5280</span></p>
+							</div>
+							<div class="h-third">
+								<p>请选择支付方式</p>
+							</div>
+							<div class="h-forth">
+								<div class="left">
+									<p>支付宝支付</p><img src="images/h-zhi.jpg" alt=""><p class="xiao">快捷方便</p>
+								</div>
+								<div class="right">
+									<img src="images/h-jian.jpg" alt="">
+									<input type="radio" class="yuan" name="pay" checked>
+								</div>
+							</div>
+							<div class="h-fifth">
+								<div class="left">
+									<p>微信支付</p>
+									<img src="images/h-weixin.jpg" alt="">
+								</div>
+								<div class="right">
+									<input type="radio" class="yuan" name="pay">
+								</div>
+
+							</div>
+							<div class="h-sixth">
+								<div class="left">
+									<p>银联支付</p>
+									<img src="images/h-yinlian.jpg" alt="">
+								</div>
+								<div class="right">
+									<input type="radio" class="yuan" name="pay">
+								</div>
+							</div>
+							<div class="h-seventh">
+								<p>实付金额：<span>￥5280</span></p>
+								<img src="images/h-queren.jpg" alt="" id="paymoney" style="cursor: pointer;">
+							</div>
+						</div>
+					</div>
+					<div class="h-daichuxing">
+						<p>出行状况：线路、装备、天气 ......</p>
+					</div>
+					<div class="h-daipingjia">
+						<div class="big-box">
+							<div class="left">
+								<p class="xingchengdianping">行程点评</p>
+								<div class="box">
+									<textarea class="dakuang"></textarea>
+									<div class="xiaokuang">
+										<a href=""><img src="images/h-saitupian.gif" alt="" class="datu"></a>
+										<a href=""><img src="images/h-jia.jpg" alt="" class="xiaotu"></a>
+										<p class="shuzi">0/5</p>
+										<button class="btn" >提交评论</button>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<a href=""><img src="images/h-guanbi.jpg" alt="" class="guanbi"></a>
+								<div class="text">
+									<p class="anpai">行程安排: <span class="manyi" name="danxuan1"><input type="radio" class="manyi" name="danxuan1">满意  <input type="radio" class="manyi" name="danxuan1">不满意  <input type="radio" class="manyi" name="danxuan1">一般</span></p>
+									<p class="canshi">住宿餐食: <span class="manyi" name="danxuan2"><input type="radio" class="manyi" name="danxuan2">满意  <input type="radio" class="manyi" name="danxuan2">不满意  <input type="radio" class="manyi" name="danxuan2">一般</span></p>
+									<p class="jiaotong">旅行交通: <span class="manyi" name="danxuan3"><input type="radio" class="manyi" name="danxuan3">满意  <input type="radio" class="manyi" name="danxuan3">不满意  <input type="radio" class="manyi" name="danxuan3">一般</span></p>
+									<p class="pingjia">综合评价: <img src="images/assess-xing.png" alt="" class="first-img"><img src="images/assess-xing.png" alt=""><img src="images/assess-xing.png" alt=""><img src="images/assess-xing.png" alt=""><img src="images/assess-xing.png" alt=""></p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="h-yiquxiao">
+						<p>您的订单已取消，欢迎您下次预订！</p>
+					</div>
+					<div class="jiazai"><p>加载更多</p></div>
+				</div>
+
+
+				<div class="hidden">
+					<div class="xiangqing">
+						<div class="bianhao">订单编号：7195351 预订时间：2015-12-29 12:04:00</div>
+						<div class="tupian1">
+							<img src="images/h-chunjie.jpg" alt="" class="chunjie">
+							<p class="danian">[春节]<魅力湘西过大年><br>湘西年夜饭，北京直飞</p>
+							<ul class="lista">
+								<li class="firsta">自驾游</li>
+								<li class="seconda">2016-02-07</li>
+								<li class="thirda">￥4580</li>
+								<li class="fortha">待出行</li>
+								<li>
+									<select name="" id="" class="quxiao">
+										<option value="">取消</option>
+										<option value="">编号</option>
+										<option value="">时间</option>
+										<option value="">地点</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="xiangqing">
+						<div class="bianhao">订单编号：7195351 预订时间：2015-12-25 12:04:00</div>
+						<div class="tupian1">
+							<img src="images/h-bingxue.jpg" alt="" class="bingxue">
+							<p class="danian">[5月]<阿尔山童话世界冰<br>雪温泉之旅>北京直飞....</p>
+							<ul class="lista">
+								<li class="firsta">自驾游</li>
+								<li class="seconda">2016-05-07</li>
+								<li class="thirda">￥4580</li>
+								<li class="fortha">待支付</li>
+								<li>
+									<select name="" id="" class="quxiao">
+										<option value="">支付</option>
+										<option value="">编号</option>
+										<option value="">时间</option>
+										<option value="">地点</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="xiangqing">
+						<div class="bianhao">订单编号：7195351 预订时间：2015-12-25 12:04:00</div>
+						<div class="tupian1">
+							<img src="images/h-hainan.jpg" alt="" >
+							<p class="danian">[4月]<海南海岛环驾 8 日<br>自驾之旅>海口直飞....</p>
+							<ul class="lista">
+								<li class="firsta">自驾游</li>
+								<li class="seconda">2016-04-07</li>
+								<li class="thirda">￥4580</li>
+								<li class="fortha">待评价</li>
+								<li>
+									<select name="" id="" class="quxiao">
+										<option value="">评价</option>
+										<option value="">编号</option>
+										<option value="">时间</option>
+										<option value="">地点</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="xiangqing">
+						<div class="bianhao">订单编号：7195351 预订时间：2015-12-25 12:04:00</div>
+						<div class="tupian1">
+							<img src="images/h-guangdong.jpg" alt="" >
+							<p class="danian">[5月]< 食在广东鄂菜美<br>食6日自驾>  北京直飞 .... </p>
+							<ul class="lista">
+								<li class="firsta">自驾游</li>
+								<li class="seconda">2016-04-07</li>
+								<li class="thirda">￥4580</li>
+								<li class="fortha">已取消</li>
+								<li>
+									<input type="button" class="quxiaoa" value="查看">
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="guanbiyemian"><p>关闭页面</p></div>
+				</div>
+
+
+			</div>
+			<div class="bottom">
+				<div class="shoucang">
+					<p class="cang">我的收藏</p>
+					<ul class="h-xuanxiang">
+						<li class="firstb"><a>看点</a></li>
+						<li class="secondb"><a>停车发呆地</a></li>
+						<li class="thirdb"><a>高德地图点</a></li>
+						<li class="forthb"><a>私享点</a></li>
+						<li class="fivthb"><a>线路</a></li>
+						<li class="sixthb"><a>自驾团</a></li>
+					</ul>
+				</div>
+				<div class="xuangxiangka">
+					<div class="kandian">
+						<p class="firstp">暂无收藏看点</p>
+						<p class="secondp">我的线路</p>
+					</div>
+
+					<div class="h-fadai">
+						<p>查看附近停车地点</p>
+					</div>
+
+					<div class="h-ditu">
+						<div id="allmap"></div>
+						<!-- <p>请查看高德地图</p> -->
+					</div>
+
+					<div class="h-sixiangdian">
+						<p>会员拥有自己的私享点哦！</p>
+					</div>
+
+					<div class="h-xianlu">
+						<img src="images/h-luxian.jpg" alt="">
+					</div>
+
+					<div class="h-jiatuan">
+						<p>查看自驾团信息</p>
+					</div>
+				</div>
+				<div class="shuju">
+					<p class="firstp">暂无线路数据</p>
+					<p class="secondp">我的车队</p>
+				</div>
+				<div class="xinjian">
+					<a href="#"><img src="images/h-xinjian.jpg" alt=""></a>
+					<p class="wode">我的照片</p>
+					<p class="zhao"><span>照片</span></p>
+				</div>
+				<div class="shangchuan">
+					<label class="dianji0" for="dianji">+上传照片</label>
+					<input value="" type="file" id="dianji">
+					<label class="dianji1" for="dianji2">创建相册</label>
+					<input value="" type="file" id="dianji2">
+					<div class="zhuanshu">
+						<img src="images/h-cao.jpg" alt="">
+						<p>分享专属</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<footer>
+
+		<div class="up">
+			<div class="up-inner">
+				<ul class="up-list clearfix">
+					<li><a class="first" href="">人民交通出版社</a></li>
+					<li><a class="second" href="">爱自驾</a></li>
+					<li><a class="thrid" href="">联系我们</a></li>
+					<li><a class="four" href="">友情链接</a></li>
+					<li><a class="fifth" href="">爱自驾品牌店</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="down">
+			<div class="down-inner clearfix">
+				<span class="first">人民交通出版社股份有限公司</span>
+			<span class="second">京ICP备15018898号-1</span>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/motai.js"></script>
+	<script src="js/zhifudaojishi.js"></script>
+	<script>
+		$(".nav-list li").click(function(){
+			$(this).css("background-color","#50bbdb").siblings().css("background-color","#fff")
+		})
+	</script>
+
+</body>
+</html>

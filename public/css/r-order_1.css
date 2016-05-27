@@ -1,0 +1,327 @@
+.section-inner{
+	width: 1000px;
+	margin: 0 auto;
+	clear:both;
+	background-position:0 98px;
+	background-image: url(../images/line.jpg);
+	background-repeat: repeat-x;
+}
+.section-top{
+	position: relative;
+}
+.order{
+	position: absolute;
+	top: 185px;
+	right: 0;
+	border: 1px solid #50bbdb;
+	background-color: #fff;
+	width: 298px;
+	height: 393px;
+	color: #333333
+}
+.order-inner{
+	width: 233px;
+	margin: 0 auto;
+}
+.order p{
+	font-size: 16px;
+	height: 58px;
+	line-height: 58px;
+	color: #333333;
+}
+.order .order-inner p .room{
+	color: #333333;
+}
+.order .p1{
+	font-size: 18px;
+	border-bottom: 1px solid #e1e1e1;
+}
+.order-inner .p2,.p3,.p4{
+	border-bottom: 1px dashed #e1e1e1;
+	text-align: left;
+}
+.section-top .order-inner  .right1,.right2,.right3{
+	color: #000;
+	float: right;
+}
+.section-top .order-inner p .right2{
+	color: #50bbdb;
+}
+.section-top .order-inner p .right3,.money{
+	color: #ea541e;
+}
+.section-top .order-inner p .left1{
+	font-size: 16px;
+	color:#999999;
+}
+
+.detail{
+	margin-top: 27px;
+}
+.detail a{
+	font-size: 18px;/*有行高24*/
+	color: #333333;
+	text-decoration: none;
+}
+.section-inner ul{
+	list-style: none;
+}
+.section-inner #list{
+	margin-top: 27px;
+}
+.section-inner #list ul{
+	float: left;
+}
+.section-inner #list ul li a{
+	font-size: 16px;
+	text-decoration: none;
+}
+.section-inner #list .num1{
+	margin-left: 115px;
+	margin-right: 183px;
+}
+.section-inner #list .num3{
+	margin-left: 182px;
+	margin-right: 183px;
+}
+
+.section-bottom p{
+	height: 60px;
+	font-size: 24px;
+	color: #333333;
+	line-height: 60px;
+}
+.bgc,.bgc2,.bgc3{
+	margin-left: 482px;
+}
+
+.road,.expense,.contact,.traveler,.insurance,.yuding{
+	margin-top: 41px;
+	padding-left: 30px;
+	background-image: url(../images/bgc.jpg);
+	background-repeat: repeat-x;
+	border: 1px solid #eeeeee;
+	color: #333333;
+}
+.road .bgc{
+	display: inline-block;
+	text-align: center;
+	line-height: 41px;
+	width: 72px;
+	height: 41px;
+	margin-top:10px;
+	text-decoration: none;
+	font-size: 19px;
+	background-color: #50bbdb;
+	color:#fff;
+}
+.expense .ex-list1 li{
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	color: #333333;
+	font-size: 24px;
+	margin-right: 78px;      
+}
+.expense .box2{
+	display: none;
+}
+.expense .ex-li{
+	position: relative;
+}
+.ex-triangle1,.ex-triangle2{
+	display: none;
+	position: absolute;
+	top:-1px;
+	left:42px;
+}
+.traveler p .bgc2{
+	display: inline-block;
+	text-align: center;	
+	width: 96px;
+	height: 41px;
+	margin-top: 10px;
+	line-height: 41px;
+	text-decoration: none;
+	font-size: 19px;
+	background-color: #50bbdb;
+	color:#fff;	
+}
+.traveler .add-border{
+	border-top: 1px dashed #ccc;
+	margin-top: 10px;
+}
+.traveler p .add{
+	display: inline-block;
+	background-color: #50bbdb;
+	color:#fff;	
+	width: 124px;
+	height: 37px;
+	text-align: center;
+	line-height: 37px;
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 370px;
+}
+.insurance .bgc3{
+	font-size: 19px;
+}
+.insurance a{
+	color: #eb5e17;
+	text-decoration: none;
+}
+.insurance table .a{
+	text-decoration: underline;
+}
+
+.input{
+	font-size: 18px;
+	height: 37px;
+	line-height: 37px;
+	padding-left: 9px;
+	border: 1px solid #ccc;
+}
+select{
+	height: 39px;
+	border: 1px solid #ccc;
+}
+.sel{
+	text-align: center;
+	line-height: 37px;
+	font-size: 18px;
+	color: #A9A9A9;
+}
+
+table{
+	border-color: #000;
+}
+table tr{
+	height: 50px;
+	font-size: 18px;
+	line-height: 50px;
+}
+table tr td{
+	padding-right: 30px;
+}
+table tr td a{
+	text-decoration: none;
+}
+table tr td span{
+	color: #70c5e0;
+}
+
+
+table tr td li{
+	cursor:pointer;
+	margin-top: 10px;
+	float: left;
+	width: 44px;
+	height: 27px;
+	text-align: center;
+	line-height: 27px;
+	border: 1px solid #bfbfbf;
+	color: #50bbdb;
+}
+table tr td .num{
+	float: left;
+	width: 50px;
+	height: 27px;
+	text-align: center;
+	line-height: 27px;
+	border: 1px solid #bfbfbf;
+	font-size: 18px;
+	color: #333333;
+	border-left: 0;
+	border-right: 0;
+}
+table tr td .black{
+	color: #333333;
+	font-size: 16px;
+	font-weight: bold;
+}
+table .tr-border{
+	border-bottom: 1px dashed #eee;
+}
+.yuding .a{
+	margin-top: 10px;
+	width: 944px;
+	border-top: 1px solid #eee;
+	font-size: 18px;
+}
+.yuding .a a{
+	color: #333333;
+}
+.result{
+	margin-top: 38px;
+}
+.result .bgc5{
+	width: 994px;
+	height: 54px;
+	line-height: 54px;
+	padding-left: 9px;
+	background-color: #dcf1f8;
+	border: 3px solid #50bbdb;
+	font-size: 24px;
+}
+.result .bgc5 .bgc6{
+	color: #ea571c;
+	font-size: 24px;
+}
+.result .bgc7{
+	width:300px; 
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.result .bgc8{
+	width: 237px;
+	height: 48px;
+	margin:0 auto;
+	margin-bottom: 55px;
+}
+.result .bgc8 input{
+	width: 237px;
+	height: 48px;
+	background-color: #cccccc;
+	text-align: center;
+	line-height: 48px;
+	border:none;
+	color: #fff;
+	margin: 0 auto;
+	font-size: 24px;
+}
+.border-top{
+	border-top: 1px solid #50bbdb;
+}
+.span1{
+	color: red;
+}
+input[type="radio"]{
+	width: 20px;
+	height: 20px;
+}
+
+input[name="agree"]{
+	display: none;
+}
+
+
+.bgi{
+	background-image: url(../images/radio-agree.png);
+	background-repeat: no-repeat;
+	color:#333333;
+	background-position: left bottom;
+	padding-left: 30px;
+}
+.bgi.checked{
+	background-position: left top;
+}
+
+
+
+
+
+

@@ -1,0 +1,385 @@
+*{
+	font-family: "微软雅黑";
+	margin: 0;
+	padding: 0;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+a{
+	text-decoration: none;
+	color: #50bbdb;
+}
+button{
+	background-color: #50bbdb;
+	border-radius: 5px;
+	border:none;
+	color: #fff;
+}
+/*弹出的黑色背景色*/
+.modal-backdrop.in{
+	opacity: 0.35;
+}
+.login-cover{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: none;
+	background-color: rgba(0,0,0,0);
+	opacity: 0.35;
+	z-index: 6;
+}
+.login-cover.alpha{
+	display:block;
+	background-color:rgba(0,0,0,0.35);
+}
+/*通用及非会员登录*/
+.login-content{
+	width: 500px;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 125px;
+	border-radius:3px;
+	border-radius:3px;
+	padding: 13px;
+	/*height: 522px;*/
+	display: none;
+	position: absolute;
+	left: 50%;
+	margin-left: -250px;
+	z-index:6;
+}
+.login-close img{
+	float: right;
+	cursor: pointer;
+}
+.login-logo{
+	margin-top: 10px;
+	margin-bottom: 45px;
+	position: relative;
+}
+.login-logo img{
+	display: block;
+	margin: 0 auto;
+}
+.login-content input{
+	/*height: 55px;*/
+	width: 355px;
+	border:1px solid #e5e5e5;
+	display: block;
+	padding: 20px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	color: #333333;
+	font-size: 14px;
+
+}
+.login-content .login-btn{
+	height: 50px;
+	width: 397px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 22px;
+	color:#fff;
+	font-size: 24px;
+	font-weight: 200;
+}
+.login-text{
+	width: 397px;
+	height: 45px;
+	margin: 0 auto;
+	/*margin-bottom: 30px;*/
+	color: #50bbdb;
+}
+.login-forget-left{
+	float: left;
+}
+.login-forget-right{
+	float: right;
+}
+.login-forget-right span{
+	color: #333333;
+}
+.login-other{
+	width: 397px;
+	margin: 0 auto;
+	position: relative;
+}
+.login-other p{
+	font-size: 13px;
+	color: #999999;
+	text-align: center;
+}
+.login-other .login-xian{
+	width: 135px;
+	height: 1px;
+	background-color: #50bbdb;
+	position: absolute;
+	top: 9px;
+}
+.login-other .login-xian:last-child{
+	right: 0px;
+}
+.login-enroll{
+	width: 233px;
+	height: 44px;
+	display: block;
+	margin: 20px auto;
+	font-size: 18px;
+}
+
+/*非会员注册*/
+.login-logo p{
+	color: #50bbdb;
+	position: absolute;
+	right: 60px;
+	bottom:-40px;
+}
+.login-logup{
+	width: 397px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+.login-logup p{
+	font-size: 13px;
+	color: #999999;
+	float: left;
+	line-height: 40px;
+	margin: 0;
+}
+.login-logup p span{
+	color: #333333;
+}
+.login-logup button{
+	float: right;
+	width: 120px;
+	height: 40px;
+	font-size: 14px;
+}
+.login-fast{
+	width: 233px;
+	height: 44px;
+	display: block;
+	margin: 20px auto;
+	font-size: 18px;
+}
+
+/*订单详情*/
+.detail-content{
+	width: 1002px;
+	margin: 0 auto;
+	margin-top: 125px;
+	background-color: #fff;
+	color: #333333;
+	display: none;
+	position: absolute;
+	left: 50%;
+	margin-left: -501px;
+}
+.detail-content h3{
+	margin: 0;
+}
+.detail-title{
+	height: 88px;
+	width: 100%;
+	border-bottom: 1px solid #d2d2d2;
+	position: relative;
+}
+.detail-title .detail-title-p{
+	font-size: 28px;
+	text-align: center;
+	line-height: 88px;
+}
+.detail-close{
+	position: absolute;
+	font-size: 16px;
+	text-align: center;
+	right: 22px;
+	top: 10px;
+	cursor: pointer;
+}
+.detail-cost{
+	width: 100%;
+	height: 90px;
+	padding-left: 30px;
+}
+.detail-cost h3{
+	line-height: 90px;
+}
+.detail-cost h3 span small,big{
+	color: #ea5023;
+}
+.detail-item{
+	border-top: 1px solid #d2d2d2;
+	border-bottom: 1px solid #d2d2d2;
+	margin-bottom: 32px;
+}
+.detail-item.dash{
+	border-bottom: 1px dashed #d2d2d2;
+	margin-bottom: 0px;
+}
+.detail-item.none{
+	border-top: none;
+}
+.detail-item-title{
+	padding-left: 29px;
+	height: 56px;
+	background-color: rgba(229,229,229,0.3);
+}
+.detail-item-title h3{
+	line-height: 56px;
+}
+.detail-item-main{
+	padding-left: 29px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	font-size: 18px;
+	line-height: 50px;
+}
+.detail-item-main p{
+	margin: 0;
+}
+.detail-item-main>p>span{
+	margin-left: 100px;
+}
+.detail-item-list p{
+	width: 380px;
+	float: left;
+}
+.detail-item-list p span{
+	width: 220px;
+	float: right;
+}
+.detail-item-main p span.money-right{
+	float: right;
+	margin-left: 0;
+	margin-right: 200px;
+}
+.money-right span{
+	color: #ea5023;
+}
+.detail-item-list .allrow{
+	width: 100%;
+}
+.detail-item-list .allrow span{
+	float: none;
+	width: 100%;
+	padding-left: 70px;
+}
+.detail-top{
+	height: 97px;
+	width: 100%;
+	position: relative;
+}
+.detail-top img{
+	position: absolute;
+	right: 30px;
+	bottom:40px;
+	cursor: pointer;
+}
+
+/*点评部分*/
+.detail-content.assess{
+	padding-bottom: 50px;
+}
+.detail-title.assess{
+	border:none;
+}
+.assess-title-p{
+	font-size: 24px;
+	line-height: 88px;
+	margin-left: 270px;
+}
+.assess-content{
+	width: 100%;
+	padding:0 53px;
+}
+.assess-left{
+	width: 539px;
+	float: left;
+	position: relative;
+}
+.assess-left textarea{
+	width: 539px;
+	height: 305px;
+	border:none;
+	border:1px solid #e7e7e7;
+	resize: none;
+}
+.assess-upphoto{
+	height: 65px;
+	width: 100%;
+  border-bottom:1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  position: absolute;
+  left: 0;
+  bottom:69px;
+}
+.assess-upphoto .shai{
+	width: 80px;
+	height: 61px;
+	display: block;
+	background-color: #e4e4e4;
+	line-height: 61px;
+	text-align: center;
+	color:#333333;
+	font-size: 16px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.assess-upphoto .add{
+	width: 64px;
+	height: 46px;
+	display: block;
+	background-color: #999999;
+	position: absolute;
+	left: 100px;
+	bottom: 6px;
+}
+.assess-upphoto .add img{
+	display: block;
+	margin: 0 auto;
+	margin-top: 6px;
+}
+.assess-upphoto p{
+	line-height: 65px;
+	padding-left: 180px;
+	color: #333333;
+}
+.assess-left button{
+	width: 100px;
+	height: 37px;
+	float: right;
+	margin-top: 88px;
+	margin-right: 5px;
+	border-radius: 0;
+}
+.assess-right{
+	float: left;
+	width: 332px;
+	margin-left: 25px;
+}
+.assess-right label{
+	font-size: 16px;
+	font-weight: normal;
+	color: #999999;
+}
+.assess-right .assess-label{
+	font-size: 18px;
+	color:#333333;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.assess-right img{
+	cursor: pointer;
+}

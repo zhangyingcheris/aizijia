@@ -1,0 +1,201 @@
+html body a:link,
+html body a:visited{
+	text-decoration: none;
+}
+header ul{
+	margin-bottom: 0px;
+}
+.banner img{
+	width: 100%;
+}
+.search{
+	width: 462px;
+	height: 40px;
+	margin: 33px auto 0px auto;
+	text-align: center;
+}
+.search input{
+	width: 425px;
+	height: 36px;
+	border:0px;
+	float: left;
+	outline: none;
+	border:2px solid #50bbdb;
+}
+.search a{
+	display: block;
+	text-decoration: none;
+}
+.glyphicon.glyphicon-search{
+	color:#5b5c60;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	top:0;
+	bottom:0;
+	background-color: #52bbdb;
+}
+.search_ul{
+	margin-top: 14px;
+}
+.search ul{
+	color:#b7b7b7;
+	font-family: regular;
+	list-style-type: none;
+}
+.search li{
+	margin-right: 15px;
+	float: right;
+}
+.search li a{
+	color:#b7b7b7;
+}
+
+/*main上部分*/
+.main{
+	margin-top: 40px;
+}
+.main .main_inner{
+	width: 1000px;
+	margin: 0 auto;
+}
+.main_inner .inner_top .top_title h2{
+	font-weight: bold;
+	display: inline;
+	margin-right: 35px;
+	color:#58667d;
+}
+.main_inner .inner_top .top_title{
+	border-bottom: 2px dashed #abb2be;
+	margin-bottom: 24px;
+	padding-bottom: 7px;
+}
+.main_inner .inner_top .top_title span{
+	font-style: italic;
+	font-size: 24px;
+	color:#b7b7b7;
+}
+.main_inner .inner_top .top_title a{
+	float: right;
+	color: gray;
+}
+
+.main_inner .inner_top .top_container .containers{
+	width: 327px;
+	height: 443px;
+	border:1px solid #cccccc;
+	float: left;
+	margin-bottom: 9px;
+}
+/*数学公式一旦运用起来将省去很多工时啊*/
+.containers:nth-of-type(3n-1){
+	margin-left: 9px;
+	margin-right: 9px;
+}
+.inner_top .containers .contain-image{
+	display: block;
+	position: relative;
+}
+.inner_top .containers .contain-image p{
+	position: absolute;
+	left: 0;
+	bottom:10px;
+	background-color: #111;
+	opacity: .7;
+	color:white;
+	width: 100%;
+	height:35px;
+	padding-left: 20px;
+	line-height: 35px;
+}
+.inner_top .containers .contain-image img{
+	display: block;
+	width: 100%;
+	height: 223px;
+	padding: 0;
+	border:0;
+}
+/*价位*/
+.inner_top .top_container .containers .jiawei{
+	background-color: #efefef;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.main_inner .inner_top .top_container .containers .jiawei span:nth-of-type(1),
+.main_inner .inner_top .top_container .containers .jiawei span:nth-of-type(3)
+{
+	color:#ff6600;
+}
+.main_inner .inner_top .top_container .containers .jiawei span:nth-of-type(2){
+	color:#9f9f9f;
+	margin-left: 40px;
+	margin-right: 35px;
+}
+.main_inner .inner_top .top_container .containers .jiawei_two p:nth-of-type(1){
+	color:#333333;
+}
+.main_inner .inner_top .top_container .containers .jiawei_two p:nth-of-type(2){
+	color:#a3a3a3;
+	font-size: 12px;
+}
+.main_inner .inner_top .top_container .containers .jiawei_two{
+	width: 285px;
+	height: 80px;
+	line-height: 35px;
+	margin: 20px auto 10px auto;
+}
+.main_inner .inner_top .top_container .containers .jiawei_three{
+	height: 58px;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+.main_inner .inner_top .top_container .containers .jiawei_three a{
+	color:#a3a3a3;
+	font-size: 14px;
+}
+.main_inner .inner_top .top_container .containers .jiawei_three span{
+	color:#a3a3a3;
+	font-size: 14px;
+}
+.main_inner .inner_top .top_container .containers .jiawei_three img{
+	vertical-align: middle;
+}
+.main_inner .inner_top .top_container .containers .jiawei_three span:nth-of-type(1){
+	float: left;
+}
+.main_inner .inner_top .top_container .containers .jiawei_three span:nth-of-type(2){
+	margin-top: 8px;
+	float: right;
+}
+.main_inner .inner_bottom{
+	margin-top: 60px;
+	margin-bottom: 80px;
+	float: right;
+}
+.main_inner .inner_bottom li{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #d6d6d6;
+	margin-right: 10px;
+	float: left;
+	list-style-type: none;
+}
+.main_inner .inner_bottom .active{
+	color:white;
+	background-color: #52bbdb;
+}
+.main_inner .inner_bottom li:hover{
+	color:white;
+	background-color: #52bbdb;
+}
+footer .down span.first{
+	margin-right: 28px;
+}
+footer .up .up-inner ul{
+	margin-bottom: 0px;
+}

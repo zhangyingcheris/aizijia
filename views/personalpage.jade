@@ -1,0 +1,708 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Document
+    link(rel='stylesheet', href='css/h-gerenzhongxin.css')
+    link(rel='stylesheet', href='css/public.css')
+    link(rel='stylesheet', href='css/login-up-modal.css')
+    script(src='css/bootstrap.css')
+    link(rel='shortcut icon', href='images/favicon.ico')
+  body
+    .login-cover
+    // 弹出来的黑色背景
+    // <button id="login-model">登录</button>
+    #login.login-content.clearfix
+      .login-close
+        img#login-close(src='images/modal-close.png', alt='close')
+      .login-logo
+        img(src='images/modal-logo.png', alt='logo')
+      input(type='text', placeholder='邮箱/手机/用户名')
+      input(type='text', placeholder='密码')
+      button.login-btn 登录
+      .login-text.clearfix
+        p.login-forget-left
+          a(href='#') 忘记密码
+        p.login-forget-right
+          span 还没有账号？
+          a#login-to-logup(href='#') 免费注册
+      .login-other
+        .login-xian
+        p 其他报名方式
+        .login-xian
+      button.login-enroll 不登录，直接报名>
+    // <button id="logup-model">注册</button>
+    #logup.login-content.clearfix
+      .login-close
+        img#logup-close(src='images/modal-close.png', alt='close')
+      .login-logo
+        img(src='images/modal-logo.png', alt='logo')
+        p
+          a(href='#') 用手机注册
+      input.email(type='text', placeholder='请输入邮箱')
+      p.truea 正确
+      p.falsea 错误
+      input.name(type='text', placeholder='用户名，4-16个字符，字母/中文/数字')
+      p.trueb 正确
+      p.falseb 错误
+      input.set(type='text', placeholder='设置密码')
+      p.truec 正确
+      p.falsec 错误
+      input.password(type='text', placeholder='输入密码')
+      p.trued 正确
+      p.falsed 错误
+      input.invitation(type='text', placeholder='输入邀请码，可不填')
+      p.truee 正确
+      p.falsee 错误
+      .login-logup
+        p
+          | 注册视为同意
+          span 《爱自驾用户使用协议》
+        button.login-btnup 注册
+      .login-other
+        .login-xian
+        p 其他报名方式
+        .login-xian
+      button.login-fast 快速登录>
+      // <div class="login-cover"></div>
+    // </div>
+    #detail.detail-content
+      .detail-title
+        p.detail-title-p 订单详情
+        #detail-close.detail-close
+          img(src='images/detail-close.png', alt='close')
+          p 关闭
+      .detail-cost
+        h3
+          | 订单支付总额:
+          span
+            small ￥
+            big 5280
+      .detail-item
+        .detail-item-title
+          h3 线路信息
+        .detail-item-main
+          p 自驾团名称：  云南落地自驾行摄之旅
+          p 出游日期：    2016-01-17
+          p
+            | 成人： 1人
+            span 儿童： 0人
+          p 房间： 两人间，愿意拼房
+      .detail-item
+        .detail-item-title
+          h3 联系人信息
+        .detail-item-main
+          .detail-item-list.clearfix
+            p
+              | 姓名：
+              span 罗小小
+            p
+              | 性别：
+              span 女
+            p
+              | 手机号码：
+              span 18270837899
+            p 邮箱：2698367589@qq.com
+      .detail-item.dash
+        .detail-item-title
+          h3 游客信息
+        .detail-item-main
+          .detail-item-list.clearfix
+            p(style='width: 100%; line-height: 30px;') 游客一
+            p
+              | 游客类型：
+              span 成人
+            p
+              | 姓名：
+              span 罗小小
+            p
+              | 性别：
+              span 女
+            p
+              | 手机号码：
+              span 18270837899
+            p
+              | 证件：
+              span 护照
+            p 452726199102031552
+      .detail-item.none
+        .detail-item-main
+          .detail-item-list.clearfix
+            p(style='width: 100%; line-height: 30px;') 游客二
+            p
+              | 游客类型：
+              span 成人
+            p
+              | 姓名：
+              span 罗笑笑
+            p
+              | 性别：
+              span 女
+            p
+              | 手机号码：
+              span 18270837899
+            p
+              | 证件：
+              span 护照
+            p 452726199102031552
+      .detail-item
+        .detail-item-title
+          h3 保险
+        .detail-item-main
+          p
+            | 平安爱自驾境外长线保险           经典型2份
+            span.money-right
+              span ￥177
+              | /份
+          p
+            | 平安爱自驾境外长线保险           经典型2份
+            span.money-right
+              span ￥177
+              | /份
+      .detail-item
+        .detail-item-title
+          h3 预定信息
+        .detail-item-main
+          .detail-item-list.clearfix
+            p.allrow
+              | 发票信息：
+              span 是否需要发票：是
+            p
+              | 发票抬头：
+              span 无
+            p
+              | 发票明细：
+              span 会议费
+            p.allrow
+              | 配送地址：
+              span 北京市朝阳区北辰东路八号汇源国际K区
+      .detail-item
+        .detail-item-title
+          h3 更多要求
+        .detail-item-main
+          .detail-item-list.clearfix
+            p.allrow 温馨的住宿和美味的餐食
+      .detail-top
+        img#jump-to-top(src='images/detail-top.png', alt='top')
+    // content
+    .top
+      .top-inner.clearfix
+        .left.clearfix
+          .le-le
+            a.changecolor.changemap(href='#')
+              img#map.before(src='images/top-map.png', alt='')
+              img.after(src='images/top-map-blue.png', alt='')
+              span.change 北京
+              span.gray 切换
+          .map.clearfix.dis
+            .title
+              p 全国：
+            .mapbox
+              ul.mapList.clearfix
+                li
+                  a(href='#') 北京
+                li
+                  a(href='#') 天津
+                li
+                  a(href='#') 河北
+                li
+                  a(href='#') 山西
+                li
+                  a(href='#') 内蒙古
+                li
+                  a(href='#') 辽宁
+                li
+                  a(href='#') 吉林
+                li
+                  a(href='#') 黑龙江
+                li
+                  a(href='#') 上海
+              ul.mapList.clearfix
+                li
+                  a(href='#') 江苏
+                li
+                  a(href='#') 浙江
+                li
+                  a(href='#') 安徽
+                li
+                  a(href='#') 福建
+                li
+                  a(href='#') 江西
+                li
+                  a(href='#') 山东
+                li
+                  a(href='#') 河南
+                li
+                  a(href='#') 湖北
+                li
+                  a(href='#') 湖南
+              ul.mapList.clearfix
+                li
+                  a(href='#') 广东
+                li
+                  a(href='#') 广西
+                li
+                  a(href='#') 海南
+                li
+                  a(href='#') 重庆
+                li
+                  a(href='#') 四川
+                li
+                  a(href='#') 贵州
+                li
+                  a(href='#') 云南
+                li
+                  a(href='#') 西藏
+                li
+                  a(href='#') 陕西
+              ul.mapList.clearfix
+                li
+                  a(href='#') 甘肃
+                li
+                  a(href='#') 青海
+                li
+                  a(href='#') 宁夏
+                li
+                  a(href='#') 新疆
+                li
+                li
+                li
+                li
+                li
+          .le-ri
+            a.changecolor(href='#')
+              img#phone.before(src='images/top-phone.png', alt='')
+              img.after(src='images/top-phone-blue.png', alt='')
+              span 下载手机APP
+        .right.clearfix
+          img#personpic(src='images/top-login.png', alt='')
+          .info.clearfix
+            .perinfo
+              span.loginname 浮生若梦_JKAy
+              img(src='images/top-angle.png', alt='')
+            .list
+              .null
+              ul.mune.clearfix
+                li
+                  a(href='个人中心.html') 个人主页
+                li
+                  a(href='#') 消息中心
+                li
+                  a(href='#') 注销
+          a#top-btn(href='#') 路线定制
+    header
+      .header-inner.clearfix
+        .logo
+          a(href='index.html')
+            img(src='images/header-logo.png', alt='')
+        .nav
+          ul.nav-list.clearfix
+            li
+              a(href='#') 首页
+            li
+              a(href='#') 目的地
+            li
+              a(href='#') 路线
+            li
+              a(href='#') 定制
+            li
+              a(href='#') 自驾团
+            li
+              a(href='#') 摄影
+            li
+              a(href='#') 互动
+            li
+              a(href='#') 精选
+            li
+              a(href='#') 预定
+    #content
+      .content-inner
+        .top
+          .JKAy
+            img.first(src='images/h-tou.jpg', alt='')
+            p 浮生若梦_JKAy
+            .xiugai
+              a(href='#')
+                img(src='images/h-xiugai.jpg', alt='')
+              .fensi
+                .left
+                  p.shuzi 0
+                  br
+                  p.wenzi 关注
+                .right
+                  p.shuzi 0
+                  br
+                  p.wenzi 粉丝
+          // <div class="h-gaigai"></div>
+          .erweima
+            img(src='images/h-erweima.jpg', alt='')
+            p 扫一扫，关注我
+          .xiangji
+            a(href='')
+              img(src='images/h-xiangji.jpg', alt='')
+            p 发布照片
+          .hudong
+            a(href='')
+              img(src='images/h-guanli.jpg', alt='')
+            p 管理互动
+        .middle
+          .dingdan
+            p 我的订单
+            ul
+              li
+                a.quanbudingdan 全部订单
+              li
+                a.daichuxing 待出行
+              li
+                a.daizhifu 待支付
+              li
+                a.daipingjia 待评价
+              li
+                a.yiquxiao 已取消
+              li
+                a#detail-modal.diangdanxiangqing 订单详情
+          .h-zhengti
+            .h-quanbudingdan
+              .wenbenkuang
+                select.tiaojian(name='', id='')
+                  option(value='') 按条件
+                  option(value='') 订单编号
+                  option(value='') 订单时间
+                  option(value='') 订单地点
+                input.kong(type='text')
+                select.zhuangtai(name='', id='')
+                  option(value='') 状态
+                  option(value='') 编号
+                  option(value='') 时间
+                  option(value='') 地点
+                img.rili1(src='images/h-rili.jpg', alt='')
+                | 至
+                a
+                  input.kong1(type='date')
+                img.rili2(src='images/h-rili.jpg', alt='')
+                input.danhao(type='text', value='单号')
+                a(href='')
+                  img.sousuo(src='images/h-sousuo.jpg', alt='')
+              .h-xinxi
+                ul
+                  li
+                    a.dingxi(href='#') 订单信息
+                  li
+                    a.chanpin(href='#') 产品类型
+                  li
+                    a(href='#') 出游日期
+                  li
+                    a.dingjin(href='#') 订单金额
+                  li
+                    a(href='#') 订单状态
+                  li
+                    a.caozuo(href='#') 操作
+              .xiangqing
+                .bianhao 订单编号：7195351 预订时间：2015-12-29 12:04:00
+                .tupian1
+                  img.chunjie(src='images/h-chunjie.jpg', alt='')
+                  p.danian [春节]
+                  ul.lista
+                    li.firsta 自驾游
+                    li.seconda 2016-02-07
+                    li.thirda ￥4580
+                    li.fortha 待出行
+                    li
+                      select.quxiao(name='', id='')
+                        option(value='') 取消
+                        option(value='') 编号
+                        option(value='') 时间
+                        option(value='') 地点
+              .xiangqing
+                .bianhao 订单编号：7195351 预订时间：2015-12-25 12:04:00
+                .tupian1
+                  img.bingxue(src='images/h-bingxue.jpg', alt='')
+                  p.danian [5月]
+                  ul.lista
+                    li.firsta 自驾游
+                    li.seconda 2016-05-07
+                    li.thirda ￥4580
+                    li.fortha 待支付
+                    li
+                      select.quxiao(name='', id='')
+                        option(value='') 支付
+                        option(value='') 编号
+                        option(value='') 时间
+                        option(value='') 地点
+              .xiangqing
+                .bianhao 订单编号：7195351 预订时间：2015-12-25 12:04:00
+                .tupian1
+                  img(src='images/h-hainan.jpg', alt='')
+                  p.danian [4月]
+                  ul.lista
+                    li.firsta 自驾游
+                    li.seconda 2016-04-07
+                    li.thirda ￥4580
+                    li.fortha 待评价
+                    li
+                      select.quxiao(name='', id='')
+                        option(value='') 评价
+                        option(value='') 编号
+                        option(value='') 时间
+                        option(value='') 地点
+              .xiangqing
+                .bianhao 订单编号：7195351 预订时间：2015-12-25 12:04:00
+                .tupian1
+                  img(src='images/h-guangdong.jpg', alt='')
+                  p.danian
+                    | [5月]< 食在广东鄂菜美
+                    br
+                    | 食6日自驾>  北京直飞 ....
+                  ul.lista
+                    li.firsta 自驾游
+                    li.seconda 2016-04-07
+                    li.thirda ￥4580
+                    li.fortha 已取消
+                    li
+                      input.quxiaoa(type='button', value='查看')
+            .h-zhifu
+              .content
+                .h-first
+                  p 自驾团 > 境内 > 云南落地自驾行摄之旅 > 我要报名 > 在线支付
+                  .zhifutiao
+                    img(src='images/h-123.jpg', alt='')
+                    ul
+                      li.firstc 选择路线
+                      li.secondc 填写订单
+                      li.thirdc 在线支付
+                      li.forthc 付款成功
+                .h-second
+                  img(src='images/h-duigou.jpg', alt='')
+                  p.left
+                    | 提交成功，请您于
+                    span#hour
+                    | 时
+                    span#minute
+                    | 分
+                    span#second
+                    | 秒内
+                    span.small （逾期订单将被取消）
+                  p.right
+                    span 应付金额：￥ 5280
+                .h-third
+                  p 请选择支付方式
+                .h-forth
+                  .left
+                    p 支付宝支付
+                    img(src='images/h-zhi.jpg', alt='')
+                    p.xiao 快捷方便
+                  .right
+                    img(src='images/h-jian.jpg', alt='')
+                    input.yuan(type='radio', name='pay', checked='')
+                .h-fifth
+                  .left
+                    p 微信支付
+                    img(src='images/h-weixin.jpg', alt='')
+                  .right
+                    input.yuan(type='radio', name='pay')
+                .h-sixth
+                  .left
+                    p 银联支付
+                    img(src='images/h-yinlian.jpg', alt='')
+                  .right
+                    input.yuan(type='radio', name='pay')
+                .h-seventh
+                  p
+                    | 实付金额：
+                    span ￥5280
+                  img#paymoney(src='images/h-queren.jpg', alt='', style='cursor: pointer;')
+            .h-daichuxing
+              p 出行状况：线路、装备、天气 ......
+            .h-daipingjia
+              .big-box
+                .left
+                  p.xingchengdianping 行程点评
+                  .box
+                    textarea.dakuang
+                    .xiaokuang
+                      a(href='')
+                        img.datu(src='images/h-saitupian.gif', alt='')
+                      a(href='')
+                        img.xiaotu(src='images/h-jia.jpg', alt='')
+                      p.shuzi 0/5
+                      button.btn 提交评论
+                .right
+                  a(href='')
+                    img.guanbi(src='images/h-guanbi.jpg', alt='')
+                  .text
+                    p.anpai
+                      | 行程安排:
+                      span.manyi(name='danxuan1')
+                        input.manyi(type='radio', name='danxuan1')
+                        | 满意
+                        input.manyi(type='radio', name='danxuan1')
+                        | 不满意
+                        input.manyi(type='radio', name='danxuan1')
+                        | 一般
+                    p.canshi
+                      | 住宿餐食:
+                      span.manyi(name='danxuan2')
+                        input.manyi(type='radio', name='danxuan2')
+                        | 满意
+                        input.manyi(type='radio', name='danxuan2')
+                        | 不满意
+                        input.manyi(type='radio', name='danxuan2')
+                        | 一般
+                    p.jiaotong
+                      | 旅行交通:
+                      span.manyi(name='danxuan3')
+                        input.manyi(type='radio', name='danxuan3')
+                        | 满意
+                        input.manyi(type='radio', name='danxuan3')
+                        | 不满意
+                        input.manyi(type='radio', name='danxuan3')
+                        | 一般
+                    p.pingjia
+                      | 综合评价:
+                      img.first-img(src='images/assess-xing.png', alt='')
+                      img(src='images/assess-xing.png', alt='')
+                      img(src='images/assess-xing.png', alt='')
+                      img(src='images/assess-xing.png', alt='')
+                      img(src='images/assess-xing.png', alt='')
+            .h-yiquxiao
+              p 您的订单已取消，欢迎您下次预订！
+            .jiazai
+              p 加载更多
+          .hidden
+            .xiangqing
+              .bianhao 订单编号：7195351 预订时间：2015-12-29 12:04:00
+              .tupian1
+                img.chunjie(src='images/h-chunjie.jpg', alt='')
+                p.danian [春节]
+                ul.lista
+                  li.firsta 自驾游
+                  li.seconda 2016-02-07
+                  li.thirda ￥4580
+                  li.fortha 待出行
+                  li
+                    select.quxiao(name='', id='')
+                      option(value='') 取消
+                      option(value='') 编号
+                      option(value='') 时间
+                      option(value='') 地点
+            .xiangqing
+              .bianhao 订单编号：7195351 预订时间：2015-12-25 12:04:00
+              .tupian1
+                img.bingxue(src='images/h-bingxue.jpg', alt='')
+                p.danian [5月]
+                ul.lista
+                  li.firsta 自驾游
+                  li.seconda 2016-05-07
+                  li.thirda ￥4580
+                  li.fortha 待支付
+                  li
+                    select.quxiao(name='', id='')
+                      option(value='') 支付
+                      option(value='') 编号
+                      option(value='') 时间
+                      option(value='') 地点
+            .xiangqing
+              .bianhao 订单编号：7195351 预订时间：2015-12-25 12:04:00
+              .tupian1
+                img(src='images/h-hainan.jpg', alt='')
+                p.danian [4月]
+                ul.lista
+                  li.firsta 自驾游
+                  li.seconda 2016-04-07
+                  li.thirda ￥4580
+                  li.fortha 待评价
+                  li
+                    select.quxiao(name='', id='')
+                      option(value='') 评价
+                      option(value='') 编号
+                      option(value='') 时间
+                      option(value='') 地点
+            .xiangqing
+              .bianhao 订单编号：7195351 预订时间：2015-12-25 12:04:00
+              .tupian1
+                img(src='images/h-guangdong.jpg', alt='')
+                p.danian
+                  | [5月]< 食在广东鄂菜美
+                  br
+                  | 食6日自驾>  北京直飞 ....
+                ul.lista
+                  li.firsta 自驾游
+                  li.seconda 2016-04-07
+                  li.thirda ￥4580
+                  li.fortha 已取消
+                  li
+                    input.quxiaoa(type='button', value='查看')
+            .guanbiyemian
+              p 关闭页面
+        .bottom
+          .shoucang
+            p.cang 我的收藏
+            ul.h-xuanxiang
+              li.firstb
+                a 看点
+              li.secondb
+                a 停车发呆地
+              li.thirdb
+                a 高德地图点
+              li.forthb
+                a 私享点
+              li.fivthb
+                a 线路
+              li.sixthb
+                a 自驾团
+          .xuangxiangka
+            .kandian
+              p.firstp 暂无收藏看点
+              p.secondp 我的线路
+            .h-fadai
+              p 查看附近停车地点
+            .h-ditu
+              #allmap
+              // <p>请查看高德地图</p>
+            .h-sixiangdian
+              p 会员拥有自己的私享点哦！
+            .h-xianlu
+              img(src='images/h-luxian.jpg', alt='')
+            .h-jiatuan
+              p 查看自驾团信息
+          .shuju
+            p.firstp 暂无线路数据
+            p.secondp 我的车队
+          .xinjian
+            a(href='#')
+              img(src='images/h-xinjian.jpg', alt='')
+            p.wode 我的照片
+            p.zhao
+              span 照片
+          .shangchuan
+            label.dianji0(for='dianji') +上传照片
+            input#dianji(value='', type='file')
+            label.dianji1(for='dianji2') 创建相册
+            input#dianji2(value='', type='file')
+            .zhuanshu
+              img(src='images/h-cao.jpg', alt='')
+              p 分享专属
+    footer
+      .up
+        .up-inner
+          ul.up-list.clearfix
+            li
+              a.first(href='') 人民交通出版社
+            li
+              a.second(href='') 爱自驾
+            li
+              a.thrid(href='') 联系我们
+            li
+              a.four(href='') 友情链接
+            li
+              a.fifth(href='') 爱自驾品牌店
+      .down
+        .down-inner.clearfix
+          span.first 人民交通出版社股份有限公司
+          span.second 京ICP备15018898号-1
+    script(src='js/jquery-1.11.1.js')
+    script(src='js/public.js')
+    script(src='js/motai.js')
+    script(src='js/zhifudaojishi.js')
+
+

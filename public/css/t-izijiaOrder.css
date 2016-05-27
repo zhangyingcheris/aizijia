@@ -1,0 +1,153 @@
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.active{
+	background-color: #50bbdb;
+}
+.banner {
+	background-color: #82d5f7;
+	margin-bottom: 8px;
+}
+.banner img {
+	display: block;
+	margin: 0 auto;
+}
+#contacts ,#basic ,#service {
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid  #e6e6e6;
+	margin-top: 35px;
+}
+#main p {
+	font-size: 24px;
+	line-height: 36px;
+	margin-left: 10px;
+	margin-top: 25px;
+	padding-left: 38px;
+}
+#contacts p {
+	background: url(../images/t-lianxiren.gif) no-repeat;
+}
+#basic p {
+	background: url(../images/t-jibenxinxi.gif) no-repeat;
+}
+#service p {
+	background: url(../images/t-special.gif) no-repeat;
+}
+#main p span {
+	font-size: 16px;
+	color: #999;
+}
+#main table {
+	margin-left: 258px;
+}
+#main table td:nth-child(1) {
+	text-align: right;
+	font-size: 16px;
+	color: #333;
+	padding-right: 20px;
+}
+#main table input ,#main table select{
+	width: 212px;
+	height: 37px;
+	border: 1px solid #ccc;
+}
+#main table td {
+	padding-bottom: 24px;
+}
+#main table td .p-g,.n-g,.e-g{
+	/*position: absolute;*/
+	height: 24px;
+	/*display: none;*/
+	/*width: 100px;*/
+}
+
+#main table .cbox {
+	width: 17px;
+	height: 16px;
+	border: 1px solid #ccc;
+	border-right: 5px;
+}
+#basic a {
+	display: block;
+	float: left;
+	border: 1px solid #ccc;
+	width: 106px;
+	height: 37px;
+	color: #333;
+	line-height: 37px;
+	text-align: center;
+	font-size: 16px;
+}
+#basic a:hover {
+	background-color: #50bbdb;
+	color: #fff;
+}
+#basic span{
+	padding-left: 14px;
+	padding-right: 22px;
+	color: #333;
+}
+#service {
+	margin-bottom: 80px;
+}
+#service ul li {
+	float: left;
+	margin-right: 14px;
+}
+#service ul li a {
+	display: block;
+	line-height: 37px;
+	width: 90px;
+	color: #333;
+	border: 1px solid #ccc;
+	text-align: center;
+	font-size: 16px;
+}
+#service ul li a:hover {
+	background-color: #50bbdb;
+	border: 0;
+	width: 92px;
+	line-height: 39px;
+}
+#service .tarea {
+	margin-left: 258px;
+	color: #82d5f7;
+	font-size: 16px;
+}
+#main #service td:nth-child(1) {
+	color: #333;
+	font-size: 16px;
+	padding-right: 20px;
+}
+#service ul li:nth-child(1){
+	background-color: #50bbdb;
+}
+#main textarea {
+	border: 1px solid #ccc;
+	width: 513px;
+	height: 200px;
+	margin-left: 86px;
+}
+#main #btn {
+	width: 212px;
+	height: 43px;
+	background-color: #50bbdb;
+	border: 0;
+	display: block;
+	margin-left: 242px;
+	font-size: 24px;
+	color: #fff;
+	margin-top: 47px;
+	margin-bottom: 45px;
+}
+.tarea span{
+	color: #333;
+	position: absolute;
+}
+#private{
+	background-color: #50bbdb;
+}

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公共内容</title>
+	<script src="js/jquery.min.js"></script>
+	<script src='js/moment.min.js'></script>
+	<script src='js/fullcalendar.js'></script>
+	<script src="js/date.js"></script>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/xqy.css">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" href="css/city.css">
+	<link rel="stylesheet" href="css/fullcalendar.css">
+	<link rel="stylesheet" href="css/fullcalendar.print.css" media='print'>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="top">
+		<div class="top-inner clearfix">
+			<div class="left clearfix">
+				<div class="le-le ">
+					<a class="changecolor changemap" href="#">
+						<img id="map" class="before" src="images/top-map.png" alt="">
+						<img class="after" src="images/top-map-blue.png" alt="">
+						<span class="change">北京</span>
+						<span class="gray">切换</span>
+					</a>
+				</div>
+				<div class="map clearfix dis">
+					<div class="title">
+						<p>全国：</p>
+					</div>
+					<div class="mapbox">
+						<ul class="mapList clearfix">
+							<li><a href="#">北京</a></li>
+							<li><a href="#">天津</a></li>
+							<li><a href="#">河北</a></li>
+							<li><a href="#">山西</a></li>
+							<li><a href="#">内蒙古</a></li>
+							<li><a href="#">辽宁</a></li>
+							<li><a href="#">吉林</a></li>
+							<li><a href="#">黑龙江</a></li>
+							<li><a href="#">上海</a></li>
+						</ul>
+						<ul class="mapList clearfix">
+							<li><a href="#">江苏</a></li>
+							<li><a href="#">浙江</a></li>
+							<li><a href="#">安徽</a></li>
+							<li><a href="#">福建</a></li>
+							<li><a href="#">江西</a></li>
+							<li><a href="#">山东</a></li>
+							<li><a href="#">河南</a></li>
+							<li><a href="#">湖北</a></li>
+							<li><a href="#">湖南</a></li>
+						</ul>
+						<ul class="mapList clearfix">
+							<li><a href="#">广东</a></li>
+							<li><a href="#">广西</a></li>
+							<li><a href="#">海南</a></li>
+							<li><a href="#">重庆</a></li>
+							<li><a href="#">四川</a></li>
+							<li><a href="#">贵州</a></li>
+							<li><a href="#">云南</a></li>
+							<li><a href="#">西藏</a></li>
+							<li><a href="#">陕西</a></li>
+						</ul>
+						<ul class="mapList clearfix">
+							<li><a href="#">甘肃</a></li>
+							<li><a href="#">青海</a></li>
+							<li><a href="#">宁夏</a></li>
+							<li><a href="#">新疆</a></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<div class="le-ri">
+
+					<a class="changecolor" href="#">
+						<img id="phone" class="before" src="images/top-phone.png" alt="">
+						<img class="after" src="images/top-phone-blue.png" alt="">
+						<span>下载手机APP</span>
+					</a>
+				</div>
+			</div>
+			<div class="right clearfix">
+				<a class="changecolor" href="#">
+					<img id="qq" class="before" src="images/top-qq.png" alt="">
+					<img class="after" src="images/top-qq-blue.png" alt="">
+				</a>
+				<a class="changecolor" href="#">
+					<img id="sina" class="before" src="images/top-sina.png" alt="">
+					<img class="after" src="images/top-sina-blue.png" alt="">
+				</a>
+				<a href="#">登录</a>
+				<span class="rule">|</span>
+				<a href="#">注册</a>
+			</div>
+		</div>
+	</div>
+	<header>
+		<div class="header-inner clearfix">
+			<div class="logo">
+				<a href="#">
+					<img src="images/header-logo.png" alt="">
+				</a>
+			</div>
+			<div class="nav">
+				<ul class="nav-list clearfix">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">目的地</a></li>
+					<li><a href="#">路线</a></li>
+					<li><a href="#">定制</a></li>
+					<li><a  class="blue" href="#">自驾团</a></li>
+					<li><a href="#">摄影</a></li>
+					<li><a href="#">互动</a></li>
+					<li><a href="#">精选</a></li>
+					<li><a href="#">预定</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="map-nav">
+		<div class="map-nav-inner">
+			<ul class="clearfix">
+				<li><a href="#">首页</a><span class="sign">></span></li>
+				<li><a href="#">自驾团</a><span class="sign">></span></li>
+				<li><a href="#">自驾团境内</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="share">
+		<div class="share-inner clearfix">
+			<ul class="suspension-window">
+				<span>分享</span>
+				<li><a href="#"><img src="images/sus-win-1.png" alt=""></a></li>
+				<li><a href="#"><img src="images/sus-win-2.png" alt=""></a></li>
+				<li><a href="#"><img src="images/sus-win-3.png" alt=""></a></li>
+				<li><a href="#"><img src="images/sus-win-4.png" alt=""></a></li>
+			</ul>
+			<div class="left">
+				<div class="pic">
+					<img src="images/share-turnpic.jpg" alt="">
+					<img src="images/share-turnpic2.jpg" alt="">
+					<img src="images/share-turnpic3.jpg" alt="">
+					<img src="images/share-turnpic4.jpg" alt="">
+				</div>
+				<div class="list clearfix">
+					<div class="pre">
+						<img src="images/share-pre.png" alt="">
+					</div>
+					<ul class="listpic clearfix">
+						<li><img src="images/share-turnpic.jpg" alt=""></li>
+						<li><img src="images/share-turnpic2.jpg" alt=""></li>
+						<li><img src="images/share-turnpic3.jpg" alt=""></li>
+						<li><img src="images/share-turnpic4.jpg" alt=""></li>
+					</ul>
+					<div class="next">
+						<img src="images/share-next.png" alt="">
+					</div>
+				</div>
+				<div id='calendar'></div>
+			</div>
+			<div class="right">
+				<h3>云南落地自驾行摄之旅</h3>
+				<p>大地之画东川红土地，光与影精美搭配的元阳梯田，一个摄影穿越的天堂……</p>
+		        <p>大地的调色板东川红土地，被称为光与影精美搭配的元阳梯田；这些地方，见过便终生难忘，那瑰丽的色彩，那历经亿万年的修炼，那亘古不变的华丽，灼痛了世人的双眼，最美的季节记录最美的影像，探寻最美的风景……</p>
+		        <p>这是一次记录大地色彩之美的摄影旅行。</p>
+			    <p> 这是享誉摄影世界的世界级摄影旅行目的地，这里没有都市的喧嚣与烦躁，没有钢筋森林给人带来的种种压抑；这里是放飞心灵的地方，也是您涤荡心灵的梦幻旅程。</p>
+				<div class="wanted clearfix">
+					<div class="price">
+						<span class="first">爱自驾价 : </span><span class="second">￥</span><span class="trith">4580</span><span class="fourth">起</span>
+					</div>
+					<div class="btn">
+						<a href="r-order_1.html">我要报名</a>
+					</div>
+					<div class="commit">
+						<img src="images/share-commit.png" alt="">
+						<span class="heart">收藏</span>
+					</div>
+				</div>
+
+				<table>
+					<tr>
+						<td><label for="date">出发日期 :</label></td>
+						<td><input type="date" class="date"  placeholder="请选择出发日期" >
+						</td>
+					</tr>
+					<tr>
+						<td><label for="city">出发城市 :</label></td>
+						<td><input type="text" class="city"  id="city" placeholder="北京"></td>
+					</tr>
+					<tr class="num clearfix">
+						<td><label for="num">出游人数 :</label></td>
+						<td>
+							<span class="sign sign-p leftborder">-</span>
+							<input id="pnum" type="text" value="1">
+							<span class="sign sign-p   rightborder">+</span>
+							<span class="people">成人</span>
+
+							<span class="sign sign-c leftborder">-</span>
+							<input id="cnum" type="text" value="0">
+							<span class="sign sign-c rightborder">+</span>
+							<span class="people">儿童</span>
+							<a href="#">儿童标准</a>
+						</td>
+					</tr>
+					<tr class="info">
+						<td>
+							<label for="info">行程概要 :</label>
+						</td>
+						<td class="clearfix">
+							<a href="#">昆明</a>
+							<span>—</span>
+							<a href="#">建水</a>
+							<span>—</span>
+							<a href="#">元阳</a>
+							<span>—</span>
+							<a href="#">元江</a>
+							<span>—</span>
+							<a href="#">玉溪</a>
+							<span>—</span>
+							<a href="#">东川</a>
+							<span>—</span>
+							<a href="#">昆明</a>
+							<a class="link" href="#">详情>></a>
+						</td>
+					</tr>
+					<tr class="soon">
+						<td>
+							<img src="images/share-smallperson.png" alt="">
+						</td>
+						<td>
+							<img src="images/share-soon.png" alt="">
+						</td>
+						<td>
+							<span>量身定制 专属行程 独立包团</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<section id="main">
+		<div class="maintop">
+			<div class="main_left">
+			</div>
+			<div class="main_center"></div>
+			<div class="main_right"></div>
+		</div>
+		<div class="main_mid">
+			<artical class="leaderintro clearfix">
+				<h2>领队介绍</h2>
+				<div class="art clearfix">
+					<div class="art_left">
+						<img src="images/dog.jpg" alt="">
+						<p>
+							中国自驾游联盟南京站
+						</p>
+					</div>
+					<div class="art_right">
+						自2005年开始，南京首家专业自驾车旅游公司——“中国自驾游联盟”，本着以城市为中心,以旅行社为龙头,以自驾游自助游为纽带的发展宗旨,通过强劲发展,现已覆盖全国20个省200多个城市，总部设在南京，在“专业保障，旅游保险，特色活动，媒体支撑”的指导思想指引下，平均年组织车友实施自驾游旅游活动百余次，参加人员达数万人！近年来，我们策划与服务的自驾游车队达400余个，参加车辆超过2000辆，参加的车友近十万多人次！ 我们的行程遍布华南、华中、华北、西南、西北20余省、区，并多次成功举办主题自驾活动，同时在尝试开辟国外自驾游市场，引导及推动着中国自驾游的方向与潮流，赢得了广大媒体与各路车会的关注与信任，成为本地区自驾游最具活力、最具经验、最具规模、最具口碑的专业机构。
+					</div>
+				</div>
+			</artical>
+			<p class="history">组团历史</p>
+			<div class="history_banner clearfix">
+				<button><img src="images/left.gif" alt=""></button>
+				<ul class="turnli">
+					<li>
+						<img src="images/history1.jpg" alt="">
+						<p>海天佛国 普陀<br>
+						山祈福之旅
+						<span>2015-01-03</span></p>
+					</li>
+					<li>
+						<img src="images/history2.jpg" alt="">
+						<p>冰雪呼伦贝尔
+ 						冬季<br>那达慕自驾
+	 					<span>2015-01-03</span></p>
+					</li>
+					<li>
+						<img src="images/history3.jpg" alt="">
+						<p>食在广东 粤菜<br>美食自驾之旅
+						<span>2015-01-03</span></p>
+					</li>
+					<li>
+						<img src="images/history4.jpg" alt="">
+						<p>
+							彩云之南 边关<br>秘境
+							<span>2015-01-03</span>
+						</p>
+					</li>
+				</ul>
+				<button><img src="images/right.gif" alt=""></button>
+			</div>
+		</div>
+		<div class="main_bottom clearfix">
+			<div class="posbox"></div>
+			<nav id="pos" class="clearfix">
+				<ul>
+					<li><a href="#xcjj">行程简介</a></li>
+					<li><a href="#fymx">费用明细</a></li>
+					<li><a href="#qtsm">其他说明</a></li>
+					<li><a href="#yhpl">用户评论</a></li>
+				</ul>
+			</nav>
+			<div class="scrollbox">
+			<div class="mainb_container clearfix">
+				<!-- <div id="xcjj"> -->
+				<a id="xcjj" href="#" class="mc_title"><span>行程简介</span></a>
+				<div class="daysintro clearfix">
+					<div class="daysintro_left">
+						<ul class="clearfix">
+							<li>
+								<img src="images/circle.png" alt="">
+							</li>
+							<li>
+								<a href="#">第一天</a>
+								<span></span>
+							</li>
+							<li class="twoday">
+								<a href="#day2">第二天</a>
+								<span>详情</span>
+							</li>
+							<li>
+								<a href="#day3">第三天</a>
+								<span></span>
+							</li>
+							<li>
+								<a href="#">第四天</a>
+								<span></span>
+							</li>
+							<li>
+								<a href="#">第五天</a>
+								<span></span>
+							</li>
+							<li>
+								<a href="#">第六天</a>
+								<span></span>
+							</li>
+							<li>
+								<a href="#">第七天</a>
+								<span></span>
+							</li>
+							<li>
+								<a href="#">第一天</a>
+								<span></span>
+							</li>
+						</ul>
+					</div>
+					<div class="daysintro_right">
+						<h2 id="day2">第二天</h2>
+						<h3>昆明—建水</h3>
+						<p>餐食：早餐、晚餐          住宿：建水</p>
+						<p>酒店早餐后，前往由传统的汉族青砖四合大院、彝族土掌房和汉彝结合的瓦檐土掌房三类建筑风格结合的民居世界—
+						—团山民居，团山至今还保存着的完整古村落整体格局，有着滇南乡村特色风貌与传统社会人文环境的原生态特点，
+						世所罕见，极为珍贵。到达建水县城后，前往参观朱家花园，有一组规模宠大的清代民居建筑，有“滇南大观园”之
+						誉！房间内的床，凳，桌，椅均采用紫木雕刻，体现清代风格，门僮及导游小姐的服饰和接待客人的清式礼仪，让人
+						有恍若置身百年前历史生活的感受。<br><img src="images/nvipday1.jpg" alt=""><img src="images/nvipday2.jpg" alt=""></p>
+						<h2 id="day3">第三天</h2>
+						<h3>建水—元阳 </h3>
+						<p>餐食：早餐、晚餐          住宿：元阳</p>
+						<p class="clearfix">酒店早餐后，前往中国最美的元阳梯田。元阳哈尼梯田主要有三大核心区组成——【坝达景区】、【老虎嘴景区】、
+						【多依树景区】，去老虎嘴俯看梯田是很好的选择，6000多亩梯田分布于深谷，像一朵巨大的花蕊，老虎嘴被美国
+						摄影家称为世界上最壮丽的田园风光；晚上看夕阳，则应该选择坝达景区，在龙树坝拍日落也是不错的选择；感受大
+						自然的鬼斧神工，19万亩映着蓝天的哈尼梯田就在你的脚下，哈尼梯田有一千多年的历史，至今科学仍无法解答，这
+						样大面积的，在这崇山峻岭中是怎么挖掘的。<br>
+						<img src="images/nvipday3.jpg" alt=""><img src="images/nvipday4.jpg" alt=""></p>
+					</div>
+				</div>
+				<!-- </div> -->
+				<div id="fymx">
+				<a href="#" class="mc_title"><span>费用明细</span></a>
+				<ul>
+					<li>【活动费用】4580元/人</li>
+					<li>【VIP会员价】4500元/人</li>
+					<li>【儿童费用】2500元/人（1.1米-1.4米不占床）</li>
+					<li class="mt">
+						【费用包含】
+						<ol>
+							<li>1、交通：起亚狮跑或现代IX35（4人1车，1000元/人，如不足4人1车，需补车费）</li>
+							<li>2、通讯：通讯设备，车标，&lt车队出行的后勤服务>组织费用</li>
+							<li>3、用餐：6早6晚，（晚餐60元/人）</li>
+							<li>4、住宿：建水住五星标准；昆明，元阳，玉溪住四星标准；东川红土地住三星标准</li>
+							<li>5、保险：太平洋旅游意外险</li>
+							<li>6、领队：优秀领队及当地导游服务</li>
+							<li>7、景点：建水朱家花园，团山民居，元阳梯田，红河那诺梯田，东川红土地</li>
+						</ol>
+					</li>
+					<li class="mt">
+						【费用不含】
+						<ol>
+							<li>1、各地往返昆明机票自理</li>
+							<li>2、全程中餐自理，不占床位早餐请自理</li>
+							<li>3、车辆的油费，路桥费，停车费用</li>
+							<li>4、全程用餐过程中客人所点的酒水费用</li>
+							<li>5、酒店电话费，洗衣费，购物等个人消费</li>
+						</ol>
+					</li>
+				</ul>
+				</div>
+				<div id="qtsm">
+				<a href="#" class="mc_title"><span>其他说明</span></a>
+				<ul class="explain">
+					<li>
+						【活动时间】
+						<p>2015年12月27日—2016年1月2日</p>
+					</li>
+					<li>
+						【租车说明】
+						<ol>
+							<li>1、本行程车辆是由组织方向当地租车公司代租；租车费用由组织方承担。基本车型：起亚狮跑；车型升级需增加车费。</li>
+							<li>
+								2、租车流程：
+								<ul>
+									<li>a. 拿车手续<br>
+										驾车人需带齐本人身份证、驾驶证和信用卡壹张，凭上述证件办理租用手续；信用卡额度不得低于10000元人民币，租车的时候需刷
+										8000元的预授权（神州租车规定）。</li>
+									<li>b. 归还所租车辆，办理还车手续后，即解除8000元预授权。</li>
+									<li>c. 交通违章的处罚，还车时需要刷2000元的违章预授权；作为交通违章押金，在还车之后一个月内无违章的情况下自动解除冻结；如
+									有违章,驾车人自行处理违章并通知租车公司后，则解除2000元的预授权；或者请租车公司代为办理违章，费用从2000元预授权中扣除
+									，剩余的部分则解除预授。</li>
+									<li>d. 行车所产生的油费路桥费包括停车费均由车上客人均摊，另有约定的除外
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+					<li>
+						【注意事项】
+						<ol>
+							<li>1、提前做好汽车检查和保养。提前准备好随车工具、备胎、润滑油等，检查户外装备是否齐全。遇旅途中出现意外事故，承办方有义
+							务和责任为客人协助解决相关问题，但不负事故责任和经济赔偿，如产生赔偿将按保险公司规定赔偿。如遇人力不可抗拒因素所产生的
+							费用由客人自理，如塌方、自然灾害等。</li>
+							<li>2、游客必须身体健康，游程中应遵守纪律，发扬团结互助的精神，必须听从领队劝说不可擅自行动，否则后果自负。</li>
+							<li>3、请自备好照相机、胶卷、防晒霜、爱好摄影、注意照看相关器材。</li>
+							<li>4、自驾车请保持在高速路上的车距，行驶中望车主自觉遵守相关交通规则，不随意超车，严禁在弯道处停车、听从领队安排协调。</li>
+							<li>5、长时间在户外活动，请戴上太阳镜，涂抹防晒霜以护肤；爱护环境，安全第一，全部垃圾带出景区。</li>
+						</ol>
+					</li>
+				</ul>
+			</div>
+			<div id="yhpl">
+				<a href="#" class="mc_title"><span>用户评论</span></a>
+				<div class="comment">
+					<p >
+						<a href="#">全部点评(15)</a>
+						<span>综合评价：</span>
+						<img src="images/star.png" alt="">
+						<img src="images/star.png" alt="">
+						<img src="images/star.png" alt="">
+						<img src="images/star.png" alt="">
+						<img src="images/star.png" alt="">
+					</p>
+					<ul class="commentall clearfix">
+						<li class="clearfix">
+							<div class="comment_header">
+								<img src="images/head.gif" alt="">
+								<p class="dif">E29****329</p>
+							</div>
+							<div class="comment_text">
+								<nav>
+									<ul class="clearfix">
+										<li>行程安排：满意 </li>
+										<li>住宿餐食：满意   </li>
+										<li>旅行交通：满意</li>
+										<li>综合评价：
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt=""></li>
+									</ul>
+								</nav>
+								<p class="con">
+									18号就结束行程了，现在才来评价，总的来说还是不错的。
+								</p>
+								<img src="images/nvipcomment1.jpg" alt="">
+								<img src="images/nvipcomment2.jpg" alt="">
+								<p class="date">2015-12-22 14:12     来自：爱自驾电脑版</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="comment_header">
+								<img src="images/head.gif" alt="">
+								<p class="dif">E29****329</p>
+							</div>
+							<div class="comment_text clearfix">
+								<nav>
+									<ul class="clearfix">
+										<li>行程安排：满意 </li>
+										<li>住宿餐食：满意   </li>
+										<li>旅行交通：满意</li>
+										<li>综合评价：
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt=""></li>
+									</ul>
+								</nav>
+								<p class="con con-two">
+									总体评论给90分！双十一活动的时候定的，价格很便宜，还会担心会不会住宿太偏僻。结果还好，第一天在水原这个地方，房间是
+公寓。周围很多小商店和酒吧，可以不用非要在第一天行程的汗蒸那里吃饭，这点给大家点建议，后三晚在加阳的怀旧酒店。还可以了，相对于这个价格不用太刻意挑剔。周围吃饭的非常方便。去明洞和北屋打车都要10000-14000的价钱。周围有地铁，我们基本是早晨地铁出，晚上打车回。</p>
+								<div class="conn clearfix">
+									<span class="left">行程安排:</span>
+								<p class="right"> 行程安排总体满意，第二天的购物关键的重点在于华克山庄，只有60分钟，那里虽然小 折扣真的便宜。娇韵诗免税基
+                    础又七折。我们基本是靠抢的回来，时间太紧张。乐天和新罗其实在网上买更方便 省的大包小包的拎着。直接去机场
+                    取，还有积分抵现使用。我订了1500人民币的东西，抵掉400多。乐天世界很好玩，可惜时间段。保存体力到最后再
+                    战斗，才是王道。</p>
+                    </div>
+                   <div class="conn clearfix">
+                   	 <span class="left">住宿餐食:</span>
+                    <p class="right">住宿第一天在水原（偏僻些），后三天在加阳怀旧酒店。周围有地铁加阳站，打车到明洞一万多点。还可以。周围吃饭
+                     的多，很方便。</p>
+                   </div>
+                    <div class="conn clearfix">
+                    	<span class="left">旅行交通:</span>
+                    <p class="right">交通基本我们是早晨地铁出 晚上打车回。首尔打车还可以把，不太堵。</p>
+                    </div>
+
+
+								<img src="images/nvipcomment1.jpg" alt="">
+								<img src="images/nvipcomment2.jpg" alt="">
+								<p class="date">2015-12-22 14:12     来自：爱自驾电脑版</p>
+								    <div class="reply clearfix">
+                    	<p class="reply-title ">爱自驾客服回复:</p>
+                    	<p class="reply-con">
+                    		尊敬的爱自驾会员，给你立减400这个订单之后，此特惠房型实际您成功预订的此客栈只收了您75元/晚，您可以仔细对比下的，感谢您对爱自驾网的关注与支持，欢迎您下次预订4007-999-999，谢谢！祝您愉快！	</p>
+
+                    	<p class="reply-date">
+                    		(2015-12-11 13:23:56)
+                    	</p>
+                    </div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="comment_header">
+								<img src="images/head1.png" alt="">
+								<p class="dif">E29****329</p>
+							</div>
+							<div class="comment_text">
+								<nav>
+									<ul class="clearfix">
+										<li>行程安排：满意 </li>
+										<li>住宿餐食：满意   </li>
+										<li>旅行交通：满意</li>
+										<li>综合评价：
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt="">
+										<img src="images/star.png" alt=""></li>
+									</ul>
+								</nav>
+
+								<p class="con">
+									18号就结束行程了，现在才来评价，总的来说还是不错的。
+								</p>
+								<div class="conn clearfix">
+									<span class="left">行程安排:</span>
+								<p class="right">很好</p>
+                    </div>
+                   <div class="conn clearfix">
+                   	 <span class="left">住宿餐食:</span>
+                    <p class="right">很好</p>
+                   </div>
+                    <div class="conn clearfix">
+                    	<span class="left">旅行交通:</span>
+                    <p class="right">很好</p>
+                    </div>
+								<img src="images/nvipcomment1.jpg" alt="">
+								<img src="images/nvipcomment2.jpg" alt="">
+								<p class="date">2015-12-22 14:12     来自：爱自驾电脑版</p>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="nextpage clearfix">
+				<a href="#">查看全部点评>></a>
+				<div class="ntpage">
+					<ul class="pagelist clearfix">
+						<li><a href="#"><img src="images/next-page-prev.png" alt=""></a></li>
+						<li><a id="first" href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li class="nl"><a href="#" class="nextp clearfix">下一页<img src="images/next-page-next.png" alt=""></a></li>
+						<li class="noleft"><span>到</span></li>
+						<li class="noleft"><input type="text" id="pagenum"></li>
+						<li class="noleft"><span>页</span></li>
+						<li class="noleft"><span id="submit">确定</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+			</div>
+
+		</div>
+	</section>
+	<footer>
+
+		<div class="up">
+			<div class="up-inner">
+				<ul class="up-list clearfix">
+					<li><a class="first" href="">人民交通出版社</a></li>
+					<li><a class="second" href="">爱自驾</a></li>
+					<li><a class="thrid" href="">联系我们</a></li>
+					<li><a class="four" href="">友情链接</a></li>
+					<li><a class="fifth" href="">爱自驾品牌店</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="down">
+			<div class="down-inner clearfix">
+				<span class="first">人民交通出版社股份有限公司</span>
+			<span class="second">京ICP备15018898号-1</span>
+			</div>
+		</div>
+
+	</footer>
+
+
+	<script src="js/public.js"></script>
+	<script src="js/jquery.cycle.all.js"></script>
+	<script src="js/xqy.js"></script>
+
+	<script src="js/Popt.js"></script>
+	<script src="js/cityJson.js"></script>
+	<script src="js/citySet.js"></script>
+</body>
+</html>
